@@ -26,26 +26,6 @@ The best implementation of MVC Design Pattern when you build your Mobile Applica
   it will generate LoginForm-screen.dart under [projectDir/lib/app/screens/auth](). Actually, **Kari** will suppose that you
   want to generate your screen as [StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
   
-- ## Add a Route
-  Open [app/routes/Routes.dart]() and subscribe your route as <br />
-  ```
-  void registeredRoute() {
-    Route.data("/login",  "AuthenticationController@loginScreen");
-  }
-  ```
-  To load this route this code
-  
-  ```
-  FlatButton(
-    child: Text("Log in"),
-    onPressed: () => Router.goto("/splash", parameter: context),
-  )
-    
-  ```
-
-  eg: **kari generate screen auth/LoginForm login**:
-  it will generate LoginForm-screen.dart under [projectDir/lib/app/screens/auth](). Actually, **Kari** will suppose that you
-  want to generate your screen as [StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
   ```
   @Screen("login")
   class LoginFormScreen extends StatefulWidget{
@@ -66,6 +46,23 @@ The best implementation of MVC Design Pattern when you build your Mobile Applica
 
   }
   ```
+- ## Add a Route
+  Open [app/routes/Routes.dart]() and subscribe your route as <br />
+  ```
+  void registeredRoute() {
+    Route.data("/login",  "AuthenticationController@loginScreen");
+  }
+  ```
+  To load this route this code
+  
+  ```
+  FlatButton(
+    child: Text("Log in"),
+    onPressed: () => Router.goto("/splash", parameter: context),
+  )
+    
+  ```
+
 ## Build & Run
 - ## Build your project
   - kari build [flutter additionals build parameters]  <br/>
