@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <data xmlns="http://www.netbeans.org/ns/make-project-private/1">
+        <activeConfTypeElem>1</activeConfTypeElem>
+        <activeConfIndexElem>0</activeConfIndexElem>
+    </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/src/command/action.c</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/includes/command/action.h</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/includes/sys/file.h</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/main.c</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/pubspek.yaml</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/Makefile</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/pubspec.yaml</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/includes/sys/sys.h</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/src/sys/sys.c</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/src/core.c</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/includes/core.h</file>
+            <file>file:/home/haranov/NetBeansProjects/karee_core/src/command/Command.c</file>
+        </group>
+    </open-files>
+</project-private>
