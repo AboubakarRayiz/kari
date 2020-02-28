@@ -78,7 +78,8 @@ int main(int argc, char** argv) {
         }
         if(commande == 2){
             if(system("flutter packages pub run build_runner build --delete-conflicting-outputs") == 0)
-                system("flutter build");
+                system("flutter build apk");
+                system("flutter build ios");
             exit(EXIT_SUCCESS);
         }
         if(commande == 3){
@@ -130,12 +131,5 @@ int main(int argc, char** argv) {
         return (EXIT_SUCCESS);
     
     }
-    printf("nbr = %d",argc);
-    setOperation("generate", 3, "controller", "view", "item");
     return (EXIT_SUCCESS);
 }
-
-/**
- * karee generate controller PatController
- * karee generate view       PatPage        pat
- **/

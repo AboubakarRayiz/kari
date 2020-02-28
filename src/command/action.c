@@ -52,20 +52,16 @@ Action actionForString(char* action){
         sprintf(uri, "%s%s",APP_CONTROLLERS_DIR,subPath);
         sprintf(additionalPath, "lib%s",uri);
         sprintf(path,"%s%sController.dart", additionalPath,controllerClassName);
-        //sprintf(command, "mkdir -p %s",additionalPath);
         makedir(additionalPath);
-        //system(command);
         sprintf(uri, "%s%sController.dart",uri,controllerClassName);
         free(subPath);
         
-        //sprintf(path,"lib/app/controllers/%s.dart", name);
-        //system("mkdir -p lib/app/controllers/");
         controllerTemplate = fopen(path, "w+");
         fprintf(controllerTemplate,""
         "import \"package:%s/core/core.dart\";\n\n"
         "@controller\n"
-        "class %sController{\n"
-        "   String index(Map<Symbol, dynamic> arg){\n"
+        "class %sController{\n\n"
+        "   String index(){\n"
         "       return \"Hello Welcome to %sController\";\n"
         "   }\n"
         "}\n", flutterProjetName, controllerClassName, controllerClassName);
@@ -80,7 +76,6 @@ Action actionForString(char* action){
             fclose(controllerManager);
         }
         
-        //system("cat lib/app/controllers.dart > .save-controller");
         mv(APP_CONTROLLERS_FILE, SAVE_CONTROLLER);
         controllerManager = fopen(APP_CONTROLLERS_FILE, "w+");
         save = fopen(SAVE_CONTROLLER, "r");
@@ -91,7 +86,6 @@ Action actionForString(char* action){
             while((charRead = fgetc(save)) != EOF){
                 fprintf(controllerManager, "%c",charRead);
             }
-            //fseek(controllerManager, 2, SEEK_END);
             fseek(controllerManager, -3, SEEK_CUR);
             fprintf(controllerManager, "\n\t%sController(),\n];", controllerClassName);
             fclose(controllerManager);
@@ -101,7 +95,6 @@ Action actionForString(char* action){
             exit(EXIT_FAILURE);
         }
         
-      //  system(strcat("echo ", strcat(controllerTemplate, strcat(" > lib/app/controllers/", strcat(name, ".dart")))));
     }
 
 
@@ -173,7 +166,6 @@ Action actionForString(char* action){
             fclose(screenManager);
         }
         
-        //system("cat lib/app/screens.dart > .save-screens");
         mv(APP_SCREENS_FILE, SAVE_SCREENS);
         screenManager = fopen(APP_SCREENS_FILE, "w+");
         save = fopen(SAVE_SCREENS, "r");
@@ -194,7 +186,6 @@ Action actionForString(char* action){
             exit(EXIT_FAILURE);
         }
         
-      //  system(strcat("echo ", strcat(controllerTemplate, strcat(" > lib/app/controllers/", strcat(name, ".dart")))));
     }
 
     

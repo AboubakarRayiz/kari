@@ -19,16 +19,8 @@ Operation setOperation(char* command, int argNumber, ...){
     
    va_list args;
    int i;
-
-   /* initialize valist for num number of arguments */
    va_start(args, argNumber);
-   //printf("command = %s\n",command);
-   /* access all the arguments assigned to valist */
-   for (i = 0; i < argNumber; i++) {
-       printf("arg = %s ",va_arg(args, char*));
-   }
-	
-   /* clean memory reserved for valist */
+   for (i = 0; i < argNumber; i++) ;
    va_end(args);
 
 }
