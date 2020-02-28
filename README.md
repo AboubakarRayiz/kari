@@ -58,7 +58,7 @@ The best implementation of MVC Design Pattern when you build your Mobile Applica
   ```
   FlatButton(
     child: Text("Log in"),
-    onPressed: () => Router.goto("/splash", parameter: context),
+    onPressed: () => Router.goto("/login", parameter: context),
   )
     
   ```
